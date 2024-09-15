@@ -20,6 +20,14 @@ while True:
             if answer == CAU_TRA_LOI_LIST[BOCAUHOI[level]]:
                 print("Correct answer")
                 level += 1
+                print("Do you want to answer next question or stop")
+                print("Enter 1 to continue and 2 for end")
+                answer1 = input("Here: ")
+                if answer1 == '1':
+                    continue           
+                else:
+                    print("See you,your reward is,",(GIAI_THUONG_LIST[level-1]))
+                    break
             else:
                 if level == 0:
                     print("Incorrect,Your reward is",(GIAI_THUONG_LIST[level]))
